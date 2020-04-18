@@ -1,0 +1,31 @@
+{
+  "extends": ["react-app"],
+  "parserOptions": {
+    "ecmaVersion": 2018
+  },
+  "env": {
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "plugins": ["jsx-a11y", "baseui"],
+  "rules": {
+    "linebreak-style": "off",
+    "no-plusplus": [
+      2,
+      {
+        "allowForLoopAfterthoughts": true
+      }
+    ],
+    "semi": 1,
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".ts", ".tsx"]
+      }
+    ],
+    "baseui/deprecated-theme-api": "warn",
+    "baseui/deprecated-component-api": "warn",
+    "baseui/no-deep-imports": "warn"
+  }
+}

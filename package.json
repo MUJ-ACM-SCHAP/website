@@ -10,7 +10,9 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public -o book",
-    "deploy": "gh-pages -d book"
+    "deploy": "gh-pages -d book",
+    "lint": "eslint ./src/*.tsx --fix",
+    "format": "prettier --write \"**/*.+(ts|tsx|json|css|md)\""
   },
   "browserslist": {
     "production": [
@@ -37,8 +39,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
-    "styletron-engine-atomic": "^1.4.6",
-    "styletron-react": "^5.2.7",
+    "styled-components": "^5.1.0",
     "typescript": "^3.7.5"
   },
   "devDependencies": {
@@ -46,6 +47,10 @@
     "@storybook/addon-links": "^5.3.18",
     "@storybook/addons": "^5.3.18",
     "@storybook/preset-create-react-app": "^2.1.1",
-    "@storybook/react": "^5.3.18"
+    "@storybook/react": "^5.3.18",
+    "@types/styled-components": "^5.1.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "extends": ["react-app"],
+  "extends": ["react-app", "prettier", "prettier/react"],
   "parserOptions": {
     "ecmaVersion": 2018
   },
@@ -8,7 +8,7 @@
     "es6": true,
     "node": true
   },
-  "plugins": ["jsx-a11y"],
+  "plugins": ["jsx-a11y", "prettier"],
   "rules": {
     "linebreak-style": "off",
     "no-plusplus": [
@@ -17,7 +17,6 @@
         "allowForLoopAfterthoughts": true
       }
     ],
-    "semi": 1,
     "react/jsx-filename-extension": [
       1,
       {
